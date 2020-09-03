@@ -1,0 +1,104 @@
+*,*::before,*::after{
+  margin:0;
+  padding: 0;
+  list-style: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,900;1,900&display=swap');
+
+html{
+  scroll-behavior: smooth;
+  cursor: default;
+  cursor:url('images/cursor.png'), auto;
+  /* overflow: hidden; */
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.page{
+  width: 100vw;
+  height: 100vh;
+  background: #EEEEEE;
+  display: grid;
+  grid-template-columns: 1% 38% 60% 1%;
+}
+
+h1, h3, a, p{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  color: #333533;
+  font-size: 24px;
+}
+
+.leftup{
+  position: absolute;
+  top: 1%;
+  left: 1%;
+}
+.midup{
+  position: absolute;
+  top: 1%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.rightup{
+  position: absolute;
+  top: 1%;
+  right: 1%;
+}
+
+.cv{
+  padding-top: 5vh;
+  grid-column: 2/3;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  left: 1%;
+  position: relative;
+}
+
+
+.cv h1{
+  font-size: 6em;
+  color: #8338EC;
+}
+
+
+.tudor{
+  position: absolute;
+  bottom:0%;
+  right: 0%;
+  z-index: 1;
+}
+
+.bgtext{
+  grid-column: 3/4;
+  text-align: center;
+}
+
+.bgtext h1{
+  color: #EEEEEE;
+  font-size: 10em;
+  -webkit-text-stroke: 3px #8338EC;
+}
+
+
+
+.leftdown{
+  position: absolute;
+  bottom: 1%;
+  left: 1%;
+}
+.middown{
+  position: absolute;
+  bottom: 1%;
+  left: 25%;
+}
+.rightdown{
+  position: absolute;
+  bottom: 1%;
+  right: 1%;
+}
